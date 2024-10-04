@@ -1,10 +1,10 @@
 package com.david.workshopmongo.dto;
 
 import com.david.workshopmongo.domain.User;
-
 import java.io.Serializable;
+import java.util.Optional;
 
-public class UserDTO implements Serializable {
+public class UserDTO implements Serializable {//DTO significa Data Transfer Object, é um objeto reduzido onde se pode usar para buscar tipos de dados de um objeto selecionando o que se deseja
 
     private static final long serialVersionUID = 1L;
 

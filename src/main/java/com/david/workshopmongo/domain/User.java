@@ -2,7 +2,6 @@ package com.david.workshopmongo.domain;
 
 import jakarta.persistence.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.io.Serializable;
 import java.util.Objects;
 
