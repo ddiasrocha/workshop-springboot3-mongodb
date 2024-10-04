@@ -43,4 +43,10 @@ public class UserResource {//controlador REST
         return ResponseEntity.created(uri).build(); //retorna um código 201 ok(o created o faz), com um cabeçalho contendo a localização do novo recurso criado
     }
 
+    @RequestMapping(value="/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<Void> delete(@PathVariable String id) {
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }
